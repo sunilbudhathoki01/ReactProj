@@ -4,6 +4,7 @@ import Card from './Card.jsx'
 import ComponentA from "./components/ComponentA.jsx"
 import ComponentB from "./components/ComponentB.jsx"
 import ComponentC from "./components/ComponentC.jsx"
+import ProductsTable from "./components/ProductsTable.jsx"
 function App() {
   const [count,setCount]=useState(0)
   const titleRef=useRef(null)
@@ -19,7 +20,9 @@ function App() {
 
   }
   return (
+    
     <div>
+<ProductsTable></ProductsTable>
       <ComponentA numA={count}></ComponentA>
     
         <h1 ref={titleRef}>hello title</h1>
