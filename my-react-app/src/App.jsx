@@ -1,9 +1,9 @@
 import "../src/App.css"
 import React, { useEffect, useRef, useState } from 'react'
-import Card from './Card'
-import ComponentA from "./components/ComponentA"
-import ComponentB from "./components/ComponentB"
-import ComponentC from "./components/ComponentC"
+import Card from './Card.jsx'
+import ComponentA from "./components/ComponentA.jsx"
+import ComponentB from "./components/ComponentB.jsx"
+import ComponentC from "./components/ComponentC.jsx"
 function App() {
   const [count,setCount]=useState(0)
   const titleRef=useRef(null)
@@ -33,11 +33,8 @@ function App() {
 <Card title="samsung" brand="Samsung " price="$20"></Card>
 <Card title="Iphone13" brand="Apple" price="$40"></Card>
    <Card title="Motorola" brand="Nokia" price="$60"></Card>
-
-    </div>
-
-    
-  )
+</div>
+)
 }
 
 export default App

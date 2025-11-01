@@ -1,10 +1,21 @@
 import { createRoot } from "react-dom/client";
-import App from "./App";
 import { StrictMode } from "react";
-import Card from "./Card";
-createRoot(document.getElementById('root')).render(
-    <StrictMode>
-        <App></App>
-    </StrictMode>
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import Message from "./Message.jsx";
+import App from "./App";
 
-)
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+    createRoot(rootElement).render(
+        <StrictMode>
+            <Provider store={store}>
+                <App></App>
+            </Provider>
+            
+        </StrictMode>
+    );
+} else {
+    console.error("Root element with id 'root' not found in the DOM.");
+}

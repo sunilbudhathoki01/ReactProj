@@ -1,13 +1,12 @@
 import React from 'react'
-import ComponentC from './ComponentC'
+import ComponentC from './ComponentC.jsx'
 
-function ComponentB({numB=0}) {
+const ComponentB=()=> {
   return (
-    <div>
-        square:{numB*numB}
-        <ComponentC numC={numB*numB}></ComponentC>
-      
-    </div>
+    <div style={{border:"1px solid",padding:"1rem"}}>
+      <h2>Component B</h2>
+      <ComponentC></ComponentC>
+</div>
   )
 }
 
