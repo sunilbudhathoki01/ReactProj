@@ -5,6 +5,7 @@ import ComponentA from "./components/ComponentA.jsx"
 import ComponentB from "./components/ComponentB.jsx"
 import ComponentC from "./components/ComponentC.jsx"
 import ProductsTable from "./components/ProductsTable.jsx"
+import Header from "./components/Header.jsx"
 function App() {
   const [count,setCount]=useState(0)
   const titleRef=useRef(null)
@@ -22,6 +23,7 @@ function App() {
   return (
     
     <div>
+ 
 <ProductsTable></ProductsTable>
       <ComponentA numA={count}></ComponentA>
     
