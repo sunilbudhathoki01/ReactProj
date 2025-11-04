@@ -8,6 +8,7 @@ import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Products from "./pages/Products";
 const Router = () => {
   return (
     <BrowserRouter>
@@ -18,6 +19,9 @@ const Router = () => {
         <Route path="contact" element={<Contact></Contact>}></Route>
          <Route path="features" element={<Features></Features>}></Route>
         <Route path="Pricing" element={<Pricing></Pricing>}></Route>
+       <Route path="products" element={<Products></Products>}>
+         <Route path=":id"></Route>
+       </Route>
        </Route>
        <Route path="/auth" element={<MainLayouts></MainLayouts>}>
         <Route path="login" element={<Login/>}></Route>
